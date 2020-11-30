@@ -20,3 +20,6 @@ h2 {
   background-color: #0b728c;
   color: #0a3641;
 }
+#logo {
+  max-width: 297px;
+}
