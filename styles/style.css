@@ -1,9 +1,22 @@
-body{
-    background-color: #E8E8E8;
+body {
+  background-color: #e8e8e8;
+  font-family: "Noto-Sans-Display";
+  font-size: 20px;
 }
-.icon{
-    color: #0A3641;
+.icon {
+  color: #0a3641;
 }
-h1{
-    font-family: roboto, sans-serif;
+h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 45px;
+}
+h2 {
+  font-family: Roboto;
+  font-weight: medium;
+  font-size: 30px;
+}
+.button {
+  background-color: #0b728c;
+  color: #0a3641;
 }
