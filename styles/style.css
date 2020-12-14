@@ -1,25 +1,50 @@
+/* BODY */
 body {
   background-color: #e8e8e8;
   font-family: "Noto-Sans-Display";
   font-size: 20px;
 }
+
+ /* HEADER */
+#logo {
+  max-width: 297px;
+}
+
+/* ICONS */
 .icon {
   color: #0a3641;
 }
+
+/* NAV */
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+  color: #0A3641;
+}
+
+/* MAIN */
 h1 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 45px;
+  color: #0A3641;
 }
 h2 {
   font-family: Roboto;
   font-weight: medium;
   font-size: 30px;
+  color: #0A3641;
+}
+p{
+  color: #0a3641;
 }
 .button {
   background-color: #0b728c;
-  color: #0a3641;
+  color: ##0A3641;
 }
-#logo {
-  max-width: 297px;
-}
+
+
+
