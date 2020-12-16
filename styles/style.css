@@ -3,6 +3,8 @@ body {
   background-color: #e8e8e8;
   font-family: "Noto-Sans-Display";
   font-size: 20px;
+  color: #0a3641;
+  margin: 0;
 }
 
  /* HEADER */
@@ -38,13 +40,25 @@ h2 {
   font-size: 30px;
   color: #0A3641;
 }
-p{
-  color: #0a3641;
+
+.container-1{
+  width: 49%;
+  float: left;
+  text-align: center;
+  padding: 10% 0;
 }
 .button {
   background-color: #0b728c;
   color: ##0A3641;
+  width: 266px;
+  border-radius: 12px;
+  text-align: center;
+  float: left;
+}
+#img-main{
+  float: left;
+  width: 50%;
+  border: 3px solid #0b728c;
 }
 
-
-
+/* FOOTER */
