@@ -11,21 +11,26 @@ body {
 #logo {
   max-width: 297px;
 }
-
+.active{
+  text-decoration: underline;
+}
+ul{
+  padding: 0;
+}
+li {
+  display: inline;
+}
+nav a{
+  padding: 10px;
+  text-decoration: none;
+  color: #0A3641;
+}
 /* ICONS */
 .icon {
   color: #0a3641;
 }
 
-/* NAV */
-ul li {
-  display: inline-block;
-  padding: 10px;
-}
-a{
-  text-decoration: none;
-  color: #0A3641;
-}
+
 
 /* MAIN */
 h1 {
@@ -53,6 +58,7 @@ h2 {
   width: 266px;
   border-radius: 12px;
   text-align: center;
+  
 }
 #img-main{
   max-width: 700px;

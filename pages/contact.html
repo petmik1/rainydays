@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainydays</title>
+    <link rel="stylesheet" href="https://use.typekit.net/eap2qqg.css">
+    <link href="../styles/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/48aa39ea2e.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html"><img src="../images/RainyDays_Logo.png" id="logo" alt="" /></a>
+      </div>
+
+      <nav>
+        <ul>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html" >Women</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <i class="fas fa-search icon"></i>
+        <i class="fas fa-shopping-cart icon"></i>
+      </div>
+
+    </header>
+    <main>
+        <form method="POST">
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+            <label for="email-updates">Sign up for email updates.</label>
+            <input type="checkbox" id="email-updates" name="email-updates" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Send Now" class="cta" />
+        </form>
+    </main>
+    <footer>
+     <p>copyright &copy;</p>
+     <i class="fab fa-facebook-square icon"></i>
+     <i class="fas fa-envelope icon"></i>
+    </footer>
+  </body>
+</html>
+
