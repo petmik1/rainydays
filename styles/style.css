@@ -29,11 +29,6 @@ body {
   margin: 0;
 }
 
-/* ICONS */
-.icon {
-  color: #0a3641;
-}
-
 /* link */
 .link {
   text-decoration: none;
@@ -42,17 +37,22 @@ body {
 /* icons */
 .icon {
   color: #0a3641;
-  font-size: 20px;
+  font-size: 30px;
   padding: 5px;
 }
 /* HEADER */
 header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  margin: 0 20px;
+}
+header * {
+  margin: 0;
 }
 .logo {
   width: 150px;
+  margin-right: auto;
 }
 nav {
   text-align: center;
@@ -92,29 +92,34 @@ nav li a {
 }
 
 /* MAIN */
-main {
+.main__content {
   display: flex;
-  /* margin: 25px auto; */
-  margin: 0;
+  margin: 20px auto;
   align-items: center;
   flex-direction: column;
 }
+.index-main {
+  max-width: 1000px;
+}
 
-.main__content,
-.index__img {
+.main__content {
+  max-width: 1000px;
+}
+.main__content * {
   flex: 1;
 }
 
-main > div {
+.index__main_text {
+  max-width: 300px;
+  margin: auto;
   text-align: center;
 }
 
 .index__img {
-  /* width: 100%; */
+  display: block;
+  width: 95%;
+  margin: auto;
   border: #0a3641 2px solid;
-}
-.main__content{
-  /* width: 100%; */
 }
 
 .index-button {
@@ -123,28 +128,30 @@ main > div {
 }
 .index-button > * {
   flex: 1;
+  align-items: center;
 }
 
 .button1,
 .button2 {
   background-color: #0b728c;
-  color: ##0a3641;
-  width: 266px;
+  color: #0a3641;
+  width: 100px;
   border-radius: 12px;
   text-align: center;
+  height: 30px;
 }
 .button1 {
-  margin-right: 50px;
+  margin-right: 10px;
 }
 .button2 {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 /* FOOTER */
 
 footer {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   padding: 20px 5% 0;
 }
 
@@ -157,48 +164,17 @@ footer {
   font-size: 30px;
 }
 
-@media (min-width: 800px) {
-  /* main {
+@media (min-width: 750px) {
+  .main__content {
     flex-direction: row;
-    max-width: 1000px;
-    margin: auto;
-  }
-  main * {
-    margin: 25px;
-  }
-  
-  header {
-    max-width: 1000px;
-    margin: auto;
-    justify-content: space-evenly;
-  }
-  .logo {
-    margin-right: auto;
+    margin-top: 1rem;
   }
   nav {
     display: block;
-    background-color: transparent;
-    position: static;
   }
   header label {
     display: none;
   }
-  nav li {
-    display: inline-block;
-  }
-  .header__icons {
-    display: flex;
-    margin: 10px;
-  } */
 }
 @media (min-width: 1000px) {
-  
-  main {
-    /* width: 808px;
-  }
-  main * {
-    margin: 0;
-
-  }
-   */
 }
