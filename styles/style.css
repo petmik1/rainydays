@@ -18,18 +18,18 @@ h2 {
 }
 
 /* hamburger-menu */
-#hamburger-menu {
-  display: none;
+/* #hamburger-menu {
+  display: block;
   margin-left: 50px;
 }
 
-#hamburger-menu:checked ~ nav {
+#hamburger-menu:checked ~ .nav__links {
   display: block;
 }
 
 .hamburger-menu__label {
   margin-left: 50px;
-  display: block;
+  display: block; */
 }
 
 /* BODY */
@@ -56,14 +56,50 @@ body {
 }
 
 /* HEADER */
-header {
+
+a {
+  color: #0a3641;
+}
+.header {
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.header ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+.header .logo {
+  float: left;
+  display: block;
+}
+.header .menu {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+ /* header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   height: 130px;
   margin: 0 50px;
-}
+} */
 
 .header__underline {
   border-bottom: solid #0a3641;
@@ -74,14 +110,14 @@ header {
   width: 150px;
 }
 
-nav {
-  display: block;
-}
+/* .nav__links {
+  display:  none;
+} */
 
-.nav__links {
+/* .nav__links {
   list-style: none;
   margin: 100px;
-}
+} */
 
 .nav__links > li,
 .nav__links > li > a {
@@ -107,7 +143,7 @@ nav {
 
 .active {
   text-decoration: underline;
-}
+} 
 
 /* MAIN */
 main {
