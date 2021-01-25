@@ -1,14 +1,4 @@
-/* BODY */
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    background-color: #e8e8e8;
-    font-family: "Noto-Sans-Display";
-    font-size: 15px;
-    color: #0a3641;
-    margin: 0;
-  }
+
   /* MAIN */
 .main__content {
     display: flex;

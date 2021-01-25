@@ -34,12 +34,12 @@
   header label {
     display: none;
   }
+  /* men and women */
   .product-list {
     grid-template-columns: repeat(4, 1fr);
   }
-  .about-main-content{
-      flex-direction: row;
-  }
+  /* about */
+
   footer {
     justify-content: flex-start;
   }

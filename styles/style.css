@@ -1,3 +1,14 @@
+body{
+  display: grid;
+  grid-template-rows:  1fr auto 1fr;
+  min-height: 100vh;
+  background-color: #e8e8e8;
+    font-family: "Noto-Sans-Display";
+    font-size: 15px;
+    color: #0a3641;
+    margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
