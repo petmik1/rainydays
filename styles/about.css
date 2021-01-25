@@ -1,0 +1,23 @@
+main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.about-main-content {
+  display: flex;
+  flex-direction: column;
+  
+}
+.about-main-content * {
+  flex: 1;
+  
+}
+.paragraf-bold {
+  font-size: 1.2em;
+}
+p {
+  margin-bottom: 10px;
+}
+img {
+    width: 90%;
+    margin-left: 20px;
+}

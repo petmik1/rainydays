@@ -1,0 +1,25 @@
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.product {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+.product *{
+    margin-bottom: 10px;
+}
+
+main > h1 {
+    text-align: center;
+}
+div > a {
+    color: #0a3641;
+    text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
