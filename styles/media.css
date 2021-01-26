@@ -6,6 +6,15 @@
     text-align: left;
     margin-bottom: 20px;
   }
+  /* contact */
+  .contact-form{
+    grid-template-columns: 1fr 1fr;
+  }
+  .left {
+    margin: 0 10px 0 0;
+}
+.right {
+    margin: 0 0 0 10px;
 }
 
 @media (min-width: 800px) {
@@ -39,6 +48,14 @@
     grid-template-columns: repeat(4, 1fr);
   }
   /* about */
+
+  /* contact */
+  .contact-main{
+    flex-direction: row;
+  }
+  .contact-main * {
+    flex: 1;
+  }
 
   footer {
     justify-content: flex-start;

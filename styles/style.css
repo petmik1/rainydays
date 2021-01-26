@@ -1,6 +1,6 @@
 body{
   display: grid;
-  grid-template-rows:  1fr auto 1fr;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   background-color: #e8e8e8;
     font-family: "Noto-Sans-Display";
