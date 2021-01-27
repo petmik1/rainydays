@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th {
+  border: solid #0a3641 2px;
+}
+tr>img{
+    width: 20px;
+}
+.cart-table-img{
+    width: 20px;
+}
