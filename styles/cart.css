@@ -1,13 +1,31 @@
-table{
-    border-collapse: collapse;
-    margin: 0 auto;
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
 }
-th {
+th,
+td {
   border: solid #0a3641 2px;
+  padding: 5px 20px; 
 }
-tr>img{
-    width: 20px;
+
+.cart-table-img {
+  width: 50px;
 }
-.cart-table-img{
-    width: 20px;
+.product {
+  display:  inline-flex;
+  align-items: center;
+  
+}
+.product * {
+    margin-left: 10px;
+}
+.size {
+    display: flex;
+    align-items: center;
+}
+.product > p:nth-child(2) {
+    margin-top: 7px;
+}
+.tr-empty{
+    height: 150px;
 }
