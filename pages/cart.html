@@ -43,43 +43,47 @@
     </div>
     <main class="cart-main">
       <h1>Cart</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>product</th>
-            <th>size</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td >
-              <div class="product">
-                <img class="cart-table-img" src="../images/alex-geerts-mDXm0xQOb6g-unsplash.jpg" alt="">
-                <p>the rain catcher</p>
-              </div>
-              
-            </td>
-            <td>
-              <div class="size">
-                medium
-              </div>
-            </td>
-            <td></td>
-          </tr>
-          <tr class="tr-empty">
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="tr-final">
-            <td rowspan="2">Total:</td>
-            <td></td>
-            <td></td>
-          </tr>
-         
-        </tbody>
-      </table>
+      <section class="tabel">
+        <h2>Product:</h2>
+        <h2>size</h2>
+        <h2>price</h2>
+        <div class="product">
+          <img
+            class="cart-table-img"
+            src="../images/alex-geerts-mDXm0xQOb6g-unsplash.jpg"
+            alt=""
+          />
+          <p>the rain catcher</p>
+        </div>
+        <p>medium</p>
+        <p>$100</p>
+        <div class="empty-table"></div>
+        <div class="empty-table"></div>
+        <div class="empty-table"></div>
+        <p class="tabel-span2">Total:</p>
+        <p>$100</p>
+      </section>
+      <section>
+        <form method="POST" class="cart-form">
+          <label for="Fname">First name</label>
+          <input type="text" name="Fname" />
+
+          <label for="Lname">Last name</label>
+          <input type="text" name="Lname" />
+
+          <label for="phone">phone</label>
+          <input type="tel" name="phone">
+
+          <label for="email">email</label>
+          <input type="email" name="email">
+
+          <label for="address">address</label>
+          <input type="text" name="address">
+
+          <label for="city">city</label>
+          <input type="text" name="city">
+        </form>
+      </section>
     </main>
     <footer>
       <div></div>
