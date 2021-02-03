@@ -4,60 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainydays</title>
-    <link rel="stylesheet" href="https://use.typekit.net/eap2qqg.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eap2qqg.css" />
     <link href="../styles/style.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/48aa39ea2e.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="../styles/product.css" />
+    <link rel="stylesheet" href="../styles/media.css" />
+    <script
+      src="https://kit.fontawesome.com/48aa39ea2e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <div>
-        <a href="../index.html"><img src="../images/RainyDays_Logo.png" id="logo" alt="" /></a>
-      </div>
+    <div class="header__underline">
+      <header>
+        <a href="../index.html">
+          <img
+            src="../images/RainyDays_Logo.png"
+            class="logo"
+            alt="Rainydays logo, pushing the comfort zone"
+          />
+        </a>
+        <label for="hamburger-menu"><i class="fas fa-bars icon"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav>
+          <ul class="nav__links">
+            <li><a href="../pages/men.html" class="active">men</a></li>
+            <li><a href="../pages/women.html">women</a></li>
+            <li><a href="../pages/about.html">about</a></li>
+            <li><a href="../pages/contact.html">contact</a></li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul>
-            <li><a href="men.html">Men</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <i class="fas fa-search icon"></i>
-        <i class="fas fa-shopping-cart icon"></i>
-      </div>
-
-    </header>
+        <div class="header__icons">
+          <i class="fas fa-search icon"></i>
+          <a href="cart.html"><i class="fas fa-shopping-cart icon"></i></a>
+        </div>
+      </header>
+    </div>
     <main>
-        <div>
-            <img src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg" alt="image of The rain cather">
-            <img src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg" alt="image of The rain cather">
-            <img src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg" alt="image of The rain cather">
-            <img src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg" alt="image of The rain cather">
+      <div>
+        <img
+          src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg"
+          class="large"
+          alt="image of The rain cather"
+        />
+        <img
+          src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg"
+          class="small"
+          alt="image of The rain cather"
+        />
+        <img
+          src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg"
+          class="small"
+          alt="image of The rain cather"
+        />
+        <img
+          src="../images/joshua-earle--87JyMb9ZfU-unsplash.jpg"
+          class="small"
+          alt="image of The rain cather"
+        />
+      </div>
+      <div class="product-info">
+        <h1>The Rain catcher</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut tempore
+          perspiciatis amet dolore nemo laborum incidunt minus, voluptate
+          expedita quos praesentium maiores aliquam eum doloribus reiciendis
+          consectetur corrupti eaque laboriosam?
+        </p>
+        <div class="inputs">
+          <form action="">
+            <select name="size" id="">
+              <option value="">small</option>
+              <option value="">medium</option>
+              <option value="">large</option>
+            </select>
+          </form>
+          <a href="#">
+            <span class="cta">Add to cart</span>
+          </a>
         </div>
-        <div>
-            <h1>The Rain catcher</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut tempore perspiciatis amet dolore nemo laborum incidunt minus, voluptate expedita quos praesentium maiores aliquam eum doloribus reiciendis consectetur corrupti eaque laboriosam?</p>
-            <form action="">
-                <select name="size" id="">
-                    <option value="">small</option>
-                    <option value="">medium</option>
-                    <option value="">large</option>
-                </select>
-            </form>
-            <a href="#">
-              <h2 class="button">add to cart</h2>
-            </a>
-           
-        </div>
-       
+      </div>
     </main>
     <footer>
-     <p>copyright &copy;</p>
-     <i class="fab fa-facebook-square icon"></i>
-     <i class="fas fa-envelope icon"></i>
+      <p>copyright &copy;</p>
+      <i class="fab fa-facebook-square icon"></i>
+      <i class="fas fa-envelope icon"></i>
     </footer>
   </body>
 </html>
