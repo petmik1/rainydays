@@ -107,11 +107,12 @@ img{
   color: #e8e8e8;
   text-transform: uppercase;
   font-size: 1.5em;
+  border-radius: 12px;
 }
 .button1,
 .button2 {
   width: 100px;
-  border-radius: 12px;
+  
   text-align: center;
   height: 100%;
 }
