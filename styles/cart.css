@@ -2,19 +2,18 @@
   width: 50px;
 }
 .cart-main {
-  
 }
 .tabel {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-bottom: solid #0a3641 2px;
-  border-left: solid #0a3641 2px;
+  border-bottom: solid var(--color-fontAndIcons) 2px;
+  border-left: solid var(--color-fontAndIcons) 2px;
 }
 .tabel > * {
-  border-top: solid #0a3641 2px;
-  border-right: solid #0a3641 2px;
+  border-top: solid var(--color-fontAndIcons) 2px;
+  border-right: solid var(--color-fontAndIcons) 2px;
   padding: 10px;
 }
 .empty-table {
@@ -33,7 +32,7 @@
 .cart-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 100px auto;
 }
 .cart-form > div {
@@ -43,7 +42,7 @@
   margin: 25px auto;
 }
 input {
-  border: solid #0a3641 2px;
+  border: solid var(--color-fontAndIcons) 2px;
   width: 400px;
   height: 30px;
 }

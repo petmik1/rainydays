@@ -1,12 +1,14 @@
-body{
+@import "variables.css";
+
+body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background-color: #e8e8e8;
-    font-family: "Noto-Sans-Display";
-    font-size: 15px;
-    color: #0a3641;
-    margin: 0;
+  background-color: var(--color-background);
+  font-family: var(--text-paragraph);
+  font-size: 15px;
+  color: var(--color-fontAndIcons);
+  margin: 0;
 }
 
 * {
@@ -15,22 +17,22 @@ body{
 }
 
 h1 {
-  font-family: Roboto;
+  font-family: var(--text-heading);
   font-weight: bold;
   font-size: 25px;
-  color: #0a3641;
+  color: var(--color-fontAndIcons);
 }
 
 h2 {
-  font-family: Roboto;
+  font-family: var(--text-heading);
   font-weight: medium;
   font-size: 20px;
-  color: #0a3641;
+  color: var(--color-fontAndIcons);
 }
 
 /* icons */
 .icon {
-  color: #0a3641;
+  color: var(--color-fontAndIcons);
   font-size: 30px;
   padding: 5px;
 }
@@ -46,7 +48,7 @@ header * {
   margin: 0;
 }
 .header__underline {
-  border-bottom: solid #0a3641 2px;
+  border-bottom: solid var(--color-fontAndIcons) 2px;
   margin-bottom: 50px;
 }
 .logo {
@@ -75,8 +77,8 @@ nav li {
 nav li a {
   text-decoration: none;
   display: block;
-  color: #0a3641;
-  font-family: Roboto;
+  color: var(--color-fontAndIcons);
+  font-family: var(--text-heading);
   font-weight: medium;
   font-size: 20px;
   text-transform: capitalize;
@@ -92,19 +94,35 @@ nav li a {
 .header__icons {
   display: flex;
 }
-.active{
+.active {
   text-decoration: underline;
 }
+.searchbar {
+  display: flex;
+}
+.input__search__nav {
+  border: solid var(--color-fontAndIcons) 2px;
+  border-radius: 25px;
+  margin-top: 20px;
+  height: 30px;
+  background-color: var(--color-background);
+  color: var(--color-fontAndIcons);z
+  text-align: center;
+}
+.large__form__searchbar {
+  display: none;
+}
+
 /* image */
-img{
+img {
   width: 100%;
 }
 
 /* buttons */
 .cta {
   text-decoration: none;
-  background-color: #14738c;
-  color: #e8e8e8;
+  background-color: var(--color-cta);
+  color: var(--color-background);
   text-transform: uppercase;
   font-size: 1.5em;
   border-radius: 12px;
@@ -112,7 +130,7 @@ img{
 .button1,
 .button2 {
   width: 100px;
-  
+
   text-align: center;
   height: 100%;
 }
@@ -139,4 +157,3 @@ footer {
   margin: 20px;
   font-size: 30px;
 }
-
