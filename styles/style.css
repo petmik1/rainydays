@@ -36,25 +36,29 @@ h2 {
   font-size: 30px;
   padding: 5px;
 }
-/* HEADER */
 
+/* HEADER */
 header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 0 20px;
 }
+
 header * {
   margin: 0;
 }
+
 .header__underline {
   border-bottom: solid var(--color-fontAndIcons) 2px;
   margin-bottom: 50px;
 }
+
 .logo {
   width: 150px;
   margin-right: auto;
 }
+
 nav {
   text-align: center;
   width: 100%;
@@ -74,6 +78,7 @@ nav li {
   display: block;
   padding: 20px 30px;
 }
+
 nav li a {
   text-decoration: none;
   display: block;
@@ -91,15 +96,20 @@ nav li a {
 #hamburger-menu:checked ~ nav {
   display: block;
 }
+
 .header__icons {
   display: flex;
 }
+
 .active {
   text-decoration: underline;
 }
+
 .searchbar {
   display: flex;
+  align-items: center;
 }
+
 .input__search__nav {
   border: solid var(--color-fontAndIcons) 2px;
   border-radius: 25px;
@@ -109,8 +119,22 @@ nav li a {
   color: var(--color-fontAndIcons);z
   text-align: center;
 }
+
 .large__form__searchbar {
   display: none;
+}
+
+.large__searchbar__input{
+  width: 140px;
+  border: solid var(--color-fontAndIcons) 2px;
+  border-radius: 25px;
+  background-color: var(--color-background);
+}
+
+/* main */
+main{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* image */
@@ -127,21 +151,23 @@ img {
   font-size: 1.5em;
   border-radius: 12px;
 }
+
 .button1,
 .button2 {
   width: 100px;
-
   text-align: center;
   height: 100%;
 }
+
 .button1 {
   margin-right: 10px;
 }
+
 .button2 {
   margin-left: 10px;
 }
-/* FOOTER */
 
+/* FOOTER */
 footer {
   display: flex;
   align-items: center;

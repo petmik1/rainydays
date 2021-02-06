@@ -1,42 +1,53 @@
+@import "variables.css";
+
 main {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
+
 .all-images {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
+
 .img-large {
   max-width: 500px;
   margin: 0 auto;
 }
+
 .img-small {
   display: flex;
   max-width: 500px;
   margin: 0 auto;
 }
+
 .img-small > * {
   flex: 1;
   width: 33%;
 }
+
 .product-info {
   max-width: 500px;
 }
+
 .product-info > * {
   margin: 20px 10px;
   align-items: center;
   max-width: 500px;
 }
+
 .inputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .inputs > * {
   margin: 0 auto;
 }
+
 .cta {
   font-size: 20px;
   padding: 0 10px;

@@ -1,9 +1,12 @@
+@import "variables.css";
+
 .contact-main {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   margin: auto;
 }
+
 .contact-main > * {
   display: flex;
   flex-direction: column;
@@ -15,26 +18,32 @@
   display: grid;
   grid-template-columns: auto;
 }
+
 input,
 textarea {
   border: solid var(--color-fontAndIcons) 2px;
 }
+
 .contact-form > div {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
+
 .cta {
   width: 250px;
   margin: 20px auto;
 }
+
 label {
   text-align: left;
 }
+
 #message,
 h1 {
   margin-top: 15px;
 }
+
 .contact-main > form:nth-child(2) {
   text-transform: capitalize;
 }

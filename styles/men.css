@@ -1,14 +1,18 @@
+@import "variables.css";
+
 .product-list {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .product {
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
 }
+
 .product * {
   margin-bottom: 10px;
 }
@@ -16,6 +20,7 @@
 main > h1 {
   text-align: center;
 }
+
 div > a {
   color: var(--color-fontAndIcons);
   text-decoration: none;

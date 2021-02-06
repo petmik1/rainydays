@@ -37,9 +37,23 @@
         </nav>
 
         <div class="header__icons">
-          <i class="fas fa-search icon"></i>
+          <label for="hamburger-menu" class="label__hamburger">
+            <i class="fas fa-search icon"></i>
+          </label>
+          <input type="checkbox" id="hamburger-menu" />
 
-          <a href="cart.html"><i class="fas fa-shopping-cart icon"></i></a>
+          <form action="" class="large__form__searchbar">
+            <input
+              type="search"
+              placeholder="search ..."
+              class="large__searchbar__input"
+            />
+            <i class="fas fa-search icon"></i>
+          </form>
+
+          <a href="cart.html"
+            ><i class="fas fa-shopping-cart icon"></i
+          ></a>
         </div>
       </header>
     </div>
@@ -89,8 +103,8 @@
             <input type="text" name="address" />
           </div>
           <div>
-            <label for="city">city</label>
-            <input type="text" name="city" />
+            <label for="postcode">city</label>
+            <input type="text" name="postcode" />
           </div>
           <div class="span2">
             <label for="city">city</label>

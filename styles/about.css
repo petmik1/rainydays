@@ -1,7 +1,10 @@
-main {
+
+@import "variables.css";
+
+/* main {
   max-width: 90%;
   margin: 0 auto;
-}
+} */
 
 .about-img {
   width: 50%;
@@ -9,7 +12,4 @@ main {
   float: left;
   top: 6px;
   margin: 0 20px 5px 0;
-  
-}
-.p {
 }
