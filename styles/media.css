@@ -1,5 +1,12 @@
 @import "variables.css";
 
+@media (min-width: 320px){
+header{
+  flex-direction: row;
+
+}
+}
+
 @media (min-width: 600px) {
   .product-list {
     grid-template-columns: repeat(2, 1fr);
@@ -23,8 +30,11 @@
     margin: 0 0 0 10px;
   }
   /* Cart */
-  .cart-form > div > input, .cart-form > div > .cta {
+  .cart-form > div > input {
     width: 300px;
+  }
+  .cta{
+    width: 250px;
   }
 
 }

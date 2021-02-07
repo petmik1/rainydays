@@ -21,6 +21,7 @@ h1 {
   font-weight: bold;
   font-size: 25px;
   color: var(--color-fontAndIcons);
+  text-transform: capitalize;
 }
 
 h2 {
@@ -42,6 +43,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
   margin: 0 20px;
 }
 
