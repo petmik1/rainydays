@@ -54,6 +54,7 @@ header * {
 .header__underline {
   border-bottom: solid var(--color-fontAndIcons) 2px;
   margin-bottom: 50px;
+  z-index: 1000;
 }
 
 .logo {
@@ -175,6 +176,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   padding: 20px 5% 0;
+  z-index: 1000;
 }
 
 .footer__socialmedia {

@@ -6,4 +6,5 @@ btn.addEventListener("click", displayBox);
 
 function displayBox() {
     hiddenBox.style.display = "flex";
+
 }
