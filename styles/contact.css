@@ -1,5 +1,4 @@
 @import "variables.css";
-
 .contact-main {
   display: flex;
   flex-direction: column;
@@ -17,11 +16,13 @@
 .contact-form {
   display: grid;
   grid-template-columns: auto;
+  gap: 10px;
 }
 
 input,
 textarea {
   border: solid var(--color-fontAndIcons) 2px;
+  min-height: 32.5px;
 }
 
 .contact-form > div {
@@ -35,7 +36,8 @@ textarea {
   margin: 20px auto;
 }
 
-label {
+label, 
+p{
   text-align: left;
 }
 
@@ -46,4 +48,13 @@ h1 {
 
 .contact-main > form:nth-child(2) {
   text-transform: capitalize;
+}
+
+.textError {
+  display:none;
+  font-size: 0.8em;
+  color: red;
+}
+.inputError{
+  border: red solid 2px
 }

@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="you can contact rainydays support hear">
-    <title>Rainydays - Contact</title>
-    <link rel="stylesheet" href="https://use.typekit.net/eap2qqg.css" />
-    <link href="../styles/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/contact.css" />
-    <link rel="stylesheet" href="../styles/media.css" />
-    <script
-      src="https://kit.fontawesome.com/48aa39ea2e.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Hotjar Tracking Code for https://pedantic-wiles-121c44.netlify.app/ -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2713146,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="you can contact rainydays support hear">
+  <title>Rainydays - Contact</title>
+  <link rel="stylesheet" href="https://use.typekit.net/eap2qqg.css" />
+  <link href="../styles/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/contact.css" />
+  <link rel="stylesheet" href="../styles/media.css" />
+  <script src="https://kit.fontawesome.com/48aa39ea2e.js" crossorigin="anonymous"></script>
+  <!-- Hotjar Tracking Code for https://pedantic-wiles-121c44.netlify.app/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 2713146,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-  </head>
-  <body>
-    <div class="header__underline">
-      <header>
-        <a href="../index.html">
-          <img
-            src="../images/RainyDays_Logo.png"
-            class="logo"
-            alt="Rainydays logo, pushing the comfort zone"
-          />
-        </a>
-        <label for="hamburger-menu" class="label__hamburger"
-          ><i class="fas fa-bars icon"></i
-        ></label>
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body>
+  <div class="header__underline">
+    <header>
+      <a href="../index.html">
+        <img src="../images/RainyDays_Logo.png" class="logo" alt="Rainydays logo, pushing the comfort zone" />
+      </a>
+      <label for="hamburger-menu" class="label__hamburger"><i class="fas fa-bars icon"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul class="nav__links">
+          <li><a href="../pages/men.html">men</a></li>
+          <li><a href="../pages/women.html">women</a></li>
+          <li><a href="../pages/about.html">about</a></li>
+          <li><a href="../pages/contact.html" class="active">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__icons">
+        <label for="hamburger-menu" class="label__hamburger">
+          <i class="fas fa-search icon"></i>
+        </label>
         <input type="checkbox" id="hamburger-menu" />
-        <nav>
-          <ul class="nav__links">
-            <li><a href="../pages/men.html">men</a></li>
-            <li><a href="../pages/women.html">women</a></li>
-            <li><a href="../pages/about.html">about</a></li>
-            <li><a href="../pages/contact.html" class="active">contact</a></li>
-          </ul>
-        </nav>
 
-        <div class="header__icons">
-          <label for="hamburger-menu" class="label__hamburger">
-            <i class="fas fa-search icon"></i>
-          </label>
-          <input type="checkbox" id="hamburger-menu" />
+        <form action="" class="large__form__searchbar">
+          <input type="search" placeholder="search ..." class="large__searchbar__input" />
+          <i class="fas fa-search icon"></i>
+        </form>
 
-          <form action="" class="large__form__searchbar">
-            <input
-              type="search"
-              placeholder="search ..."
-              class="large__searchbar__input"
-            />
-            <i class="fas fa-search icon"></i>
-          </form>
-
-          <a href="cart.html"
-            ><i class="fas fa-shopping-cart icon"></i
-          ></a>
-        </div>
-      </header>
-    </div>
-    <main class="contact-main">
-      <div class="contact-main-info">
-        <h1>Do you got a question?</h1>
-        <p>you can contact through the form. or through social media.</p>
-        <div>
-          <i class="fab fa-facebook-square icon"></i>
-          <i class="fas fa-envelope icon"></i>
-        </div>
+        <a href="cart.html"><i class="fas fa-shopping-cart icon"></i></a>
       </div>
-      <form method="POST">
-        <div class="contact-form">
-          <div class="left">
-            <label for="name">First name</label>
-            <input type="text" name="Fname" id="name" />
-          </div>
-          <div class="right">
-            <label for="name">last name</label>
-            <input type="text" name="Lname" id="name" />
-          </div>
-          <div class="left">
-            <label for="phone">phone</label>
-            <input type="tel" name="phone" id="phone" />
-          </div>
-          <div class="right">
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" />
-          </div>
-        </div>
-        <label id="message" for="message">Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send Now" class="cta" />
-      </form>
-    </main>
-    <footer>
-      <div></div>
-      <p class="footer__copyright">copyright &copy;</p>
-
-      <div class="footer__socialmedia">
+    </header>
+  </div>
+  <main class="contact-main">
+    <div class="contact-main-info">
+      <h1>Do you got a question?</h1>
+      <p>you can contact through the form. or through social media.</p>
+      <div>
         <i class="fab fa-facebook-square icon"></i>
         <i class="fas fa-envelope icon"></i>
       </div>
-    </footer>
-  </body>
+    </div>
+    <form method="POST" id="contactForm">
+      <div class="contact-form">
+        <div class="">
+          <label for="firstName">First name</label>
+          <p class="textError" id="firstName_errortext">* Fill in a first name</p>
+          <input type="text" name="firstName" id="inputFirstName" />
+        </div>
+        <div class="">
+          <label for="lastName">last name</label>
+          <p class="textError" id="lastName_errortext" >* Fill in a last name</p>
+          <input type="text" name="lastName" id="inputLastName" />
+        </div>
+        <div class="">
+          <label for="phone">phone</label>
+          <p class="textError">* Fill in a valide phone number</p>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="">
+          <label for="email">email</label>
+          <p class="textError">* Fill in a valide email address</p>
+          <input type="email" name="email" id="email" />
+        </div>
+      </div>
+      <label id="message" for="message">Message</label>
+      <p class="textError">* Fill in a message</p>
+      <textarea name="message"></textarea>
+      <input type="submit" value="Send Now" class="cta" />
+    </form>
+  </main>
+  <footer>
+    <div></div>
+    <p class="footer__copyright">copyright &copy;</p>
+
+    <div class="footer__socialmedia">
+      <i class="fab fa-facebook-square icon"></i>
+      <i class="fas fa-envelope icon"></i>
+    </div>
+  </footer>
+  <script src="../js/contact.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
