@@ -73,7 +73,7 @@
     </div>
     <form method="POST" id="contactForm">
       <div class="contact-form">
-        <div class="">
+        <div class="firstnameerror">
           <label for="firstName">First name</label>
           <p class="textError" id="firstName_errortext">* Fill in a first name</p>
           <input type="text" name="firstName" id="inputFirstName" />
@@ -86,7 +86,11 @@
         <div class="">
           <label for="phone">phone</label>
           <p class="textError" id="phone_errortext">* Fill in a valide phone number</p>
-          <input type="tel" name="phone" id="inputPhone" />
+          <div id="phone_input">
+            <p>+47</p>
+            <input type="tel" name="phone" id="inputPhone" />
+          </div>
+          
         </div>
         <div class="">
           <label for="email">email</label>
@@ -99,6 +103,7 @@
       <textarea name="message" id="inputmessage"></textarea>
       <input type="submit" value="Send Now" class="cta" />
     </form>
+    
   </main>
   <footer>
     <div></div>
@@ -109,6 +114,7 @@
       <i class="fas fa-envelope icon"></i>
     </div>
   </footer>
+  <script src="../js/components/validation.js"></script>
   <script src="../js/contact.js"></script>
   <script src="../js/script.js"></script>
 </body>

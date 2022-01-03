@@ -58,3 +58,8 @@ h1 {
 .inputError{
   border: red solid 2px
 }
+#phone_input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,4 +1,3 @@
-console.log("hello world ")
 const contactForm = document.querySelector("#contactForm");
 const inputFirstName = document.querySelector("#inputFirstName");
 const firstName_errortext = document.querySelector("#firstName_errortext");
@@ -11,6 +10,57 @@ const email_errortext = document.querySelector("#email_errortext");
 const inputmessage = document.querySelector("#inputmessage");
 const message_errortext = document.querySelector("#message_errortext");
 
+// form validation on blur
+inputFirstName.addEventListener("blur", (e) => {
+    if (!checkLength(e.target.value, 1)) {
+        e.target.classList.add("inputError");
+        firstName_errortext.style.display = "block";
+    } else {
+        e.target.classList.remove("inputError");
+        firstName_errortext.style.display = "none";
+    }
+})
+
+inputLastName.addEventListener("blur", (e) => {
+    if (!checkLength(e.target.value, 1)) {
+        e.target.classList.add("inputError");
+        lastName_errortext.style.display = "block";
+    } else {
+        e.target.classList.remove("inputError");
+        lastName_errortext.style.display = "none";
+    }
+})
+
+inputPhone.addEventListener("blur", (e) => {
+    if (!checkLength(e.target.value, 1)) {
+        e.target.classList.add("inputError");
+        phone_errortext.style.display = "block";
+    } else {
+        e.target.classList.remove("inputError");
+        phone_errortext.style.display = "none";
+    }
+})
+
+inputEmail.addEventListener("blur", (e) => {
+    if (!validateEmail(e.target.value)) {
+        e.target.classList.add("inputError");
+        email_errortext.style.display = "block";
+    } else {
+        e.target.classList.remove("inputError");
+        email_errortext.style.display = "none";
+    }
+})
+inputmessage.addEventListener("blur", (e) => {
+    if (!checkLength(e.target.value, 20)) {
+        e.target.classList.add("inputError");
+        message_errortext.style.display = "block";
+    } else {
+        e.target.classList.remove("inputError");
+        message_errortext.style.display = "none";
+    }
+})
+
+// form validation on submit
 function validateForm() {
     event.preventDefault()
     if (checkLength(inputFirstName.value, 1)) {
@@ -52,21 +102,5 @@ function validateForm() {
         message_errortext.style.display = "block";
         inputmessage.classList.add("inputError");
     }
-
-
-
 }
-
 contactForm.addEventListener("submit", validateForm);
-
-
-
-
-
-function checkLength(value, len) {
-    if (value.trim().length > len) {
-        return true;
-    } else {
-        return false;
-    }
-}
