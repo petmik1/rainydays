@@ -93,34 +93,41 @@
       </section>
       <section>
         <form method="POST" class="cart-form">
-          <h1 class="span2">contact information</h1>
+          <h1 class="span2">personal information</h1>
           <div>
-            <label for="Fname">First name</label>
-            <input type="text" name="Fname" />
+            <label for="Fname firstNameError">First name</label>
+            <p class="errorText firstNameError">please fill in a first name</p>
+            <input type="text" name="Fname" class="inputFirstName" />
           </div>
           <div>
             <label for="Lname">Last name</label>
-            <input type="text" name="Lname" />
+            <p class="errorText lastNameError">please fill in a last name</p>
+            <input type="text" name="Lname" class="inputLastName" />
           </div>
           <div>
             <label for="phone">phone</label>
-            <input type="tel" name="phone" />
+            <p class="errorText phoneError">please fill in a valide phone number</p>
+            <input type="tel" name="phone" class="inputPhoneNum"/>
           </div>
           <div>
             <label for="email">email</label>
-            <input type="email" name="email" />
+            <p class="errorText emailError">please fill in a valide email</p>
+            <input type="email" name="email" class="inputEmail"/>
           </div>
           <div>
             <label for="address">address</label>
-            <input type="text" name="address" />
+            <p class="errorText addressError">please fill in a valide address</p>
+            <input type="text" name="address" class="inputAddress"/>
           </div>
           <div>
-            <label for="postcode">city</label>
-            <input type="text" name="postcode" />
+            <label for="postcode">post code</label>
+            <p class="errorText postcodeError">please fill in a valide post code</p>
+            <input type="text" name="postcode" class="inputPost"/>
           </div>
           <div class="span2">
             <label for="city">city</label>
-            <input type="text" name="city" />
+            <p class="errorText cityError">please fill in a city</p>
+            <input type="text" name="city" class="inputCity" />
           </div>
           <input type="submit" value="Buy now" class="cta span2" />
         </form>
@@ -133,5 +140,7 @@
         <i class="fas fa-envelope icon"></i>
       </div>
     </footer>
+    <script src="../js/components/validation.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>

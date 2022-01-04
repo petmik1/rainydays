@@ -64,3 +64,9 @@ input {
   width: 120px;
   margin: 20px auto;
 }
+
+/* form validation style*/
+.errorText {
+  color: red;
+  display: none;
+}

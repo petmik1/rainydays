@@ -169,6 +169,10 @@ img {
 .button2 {
   margin-left: 10px;
 }
+/* forms */
+.inputError{
+  border: red solid 2px
+}
 
 /* FOOTER */
 footer {

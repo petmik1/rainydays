@@ -51,13 +51,11 @@ h1 {
 }
 
 .textError {
-  display:none;
   font-size: 0.8em;
   color: red;
+  display: none;
 }
-.inputError{
-  border: red solid 2px
-}
+
 #phone_input{
   display: flex;
   align-items: center;

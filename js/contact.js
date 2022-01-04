@@ -32,7 +32,7 @@ inputLastName.addEventListener("blur", (e) => {
 })
 
 inputPhone.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 1)) {
+    if (!validatePhone(e.target.value, 1)) {
         e.target.classList.add("inputError");
         phone_errortext.style.display = "block";
     } else {
