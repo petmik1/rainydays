@@ -1,3 +1,5 @@
+const form = document.querySelector(".cart-form")
+
 const inputFirstName = document.querySelector(".inputFirstName");
 const inputLastName = document.querySelector(".inputLastName");
 const inputPhoneNum = document.querySelector(".inputPhoneNum");
@@ -16,65 +18,68 @@ const cityError = document.querySelector(".cityError");
 
 // form validation on blur
 inputFirstName.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        firstNameError.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        firstNameError.style.display = "none";
-    }
+    formSubmitLength(inputFirstName, firstNameError);
 })
 inputLastName.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        lastNameError.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        lastNameError.style.display = "none";
-    }
+    formSubmitLength(inputLastName,lastNameError);
 })
 inputPhoneNum.addEventListener("blur", (e) => {
-    if (!validatePhone(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        phoneError.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        phoneError.style.display = "none";
-    }
+    formSubmitPhone(inputPhoneNum,phoneError);
 })
 inputEmail.addEventListener("blur", (e) => {
-    if (!validateEmail(e.target.value)) {
-        e.target.classList.add("inputError");
-        emailError.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        emailError.style.display = "none";
-    }
+    formSubmitEmail(inputEmail, emailError);
 })
 inputAddress.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        addressError.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        addressError.style.display = "none";
-    }
+    formSubmitLength(inputAddress, addressError);
 })
 inputPost.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 3)) {
-        e.target.classList.add("inputError");
-        postcodeError.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        postcodeError.style.display = "none";
-    }
+    formSubmitLength(inputPost, postcodeError);
 })
 inputCity.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        cityError.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        cityError.style.display = "none";
-    }
+    formSubmitLength(inputCity, cityError);
 })
+
+// form validation on submit
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formSubmitLength(inputFirstName, firstNameError);
+    formSubmitLength(inputLastName,lastNameError);
+    formSubmitPhone(inputPhoneNum,phoneError);
+    formSubmitEmail(inputEmail, emailError);
+    formSubmitLength(inputAddress, addressError);
+    formSubmitLength(inputPost, postcodeError);
+    formSubmitLength(inputCity, cityError);
+})
+
+function formSubmitLength(input, errortext) {
+    // validate length
+    if (!checkLength(input.value, 1)) {
+        input.classList.add("inputError");
+        errortext.style.display = "block";
+    } else {
+        input.classList.remove("inputError");
+        errortext.style.display = "none";
+    }
+}
+
+function formSubmitEmail(email, errortext) {
+    // validate email
+    if (!validateEmail(email.value)) {
+        email.classList.add("inputError");
+        errortext.style.display = "block";
+    } else {
+        email.classList.remove("inputError");
+        errortext.style.display = "none";
+    }
+}
+function formSubmitPhone(phone, errortext) {
+    // validate phone nr
+    if (!validatePhone(phone.value, 1)) {
+        phone.classList.add("inputError");
+        errortext.style.display = "block";
+    } else {
+        phone.classList.remove("inputError");
+        errortext.style.display = "none";
+    }
+}
