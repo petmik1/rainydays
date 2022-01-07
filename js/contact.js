@@ -3,8 +3,6 @@ const inputFirstName = document.querySelector("#inputFirstName");
 const firstName_errortext = document.querySelector("#firstName_errortext");
 const inputLastName = document.querySelector("#inputLastName");
 const lastName_errortext = document.querySelector("#lastName_errortext");
-const inputPhone = document.querySelector("#inputPhone");
-const phone_errortext = document.querySelector("#phone_errortext");
 const inputEmail = document.querySelector("#inputEmail");
 const email_errortext = document.querySelector("#email_errortext");
 const inputmessage = document.querySelector("#inputmessage");
@@ -31,15 +29,7 @@ inputLastName.addEventListener("blur", (e) => {
     }
 })
 
-inputPhone.addEventListener("blur", (e) => {
-    if (!validatePhone(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        phone_errortext.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        phone_errortext.style.display = "none";
-    }
-})
+
 
 inputEmail.addEventListener("blur", (e) => {
     if (!validateEmail(e.target.value)) {
@@ -78,15 +68,6 @@ function validateForm() {
         lastName_errortext.style.display = "block";
         inputLastName.classList.add("inputError");
     }
-
-    if (checkLength(inputPhone.value, 1)) {
-        phone_errortext.style.display = "none";
-        inputPhone.classList.remove("inputError");
-    } else {
-        phone_errortext.style.display = "block";
-        inputPhone.classList.add("inputError");
-    }
-
     if (checkLength(inputEmail.value, 1)) {
         email_errortext.style.display = "none";
         inputEmail.classList.remove("inputError");

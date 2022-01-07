@@ -1,146 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The cart of the rainydays apge">
-    <title>Rainydays - Cart</title>
-    <link rel="stylesheet" href="https://use.typekit.net/eap2qqg.css" />
-    <link href="../styles/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/cart.css" />
-    <link rel="stylesheet" href="../styles/media.css" />
-    <script
-      src="https://kit.fontawesome.com/48aa39ea2e.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Hotjar Tracking Code for https://pedantic-wiles-121c44.netlify.app/ -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2713146,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The cart of the rainydays apge">
+  <title>Rainydays - Cart</title>
+  <link rel="stylesheet" href="https://use.typekit.net/eap2qqg.css" />
+  <link href="../styles/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/cart.css" />
+  <link rel="stylesheet" href="../styles/media.css" />
+  <script src="https://kit.fontawesome.com/48aa39ea2e.js" crossorigin="anonymous"></script>
+  <!-- Hotjar Tracking Code for https://pedantic-wiles-121c44.netlify.app/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 2713146,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-  </head>
-  <body>
-    <div class="header__underline">
-      <header>
-        <a href="../index.html">
-          <img
-            src="../images/RainyDays_Logo.png"
-            class="logo"
-            alt="Rainydays logo, pushing the comfort zone"
-          />
-        </a>
-        <label for="hamburger-menu" class="label__hamburger"
-          ><i class="fas fa-bars icon"></i
-        ></label>
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body>
+  <div class="header__underline">
+    <header>
+      <a href="../index.html">
+        <img src="../images/RainyDays_Logo.png" class="logo" alt="Rainydays logo, pushing the comfort zone" />
+      </a>
+      <label for="hamburger-menu" class="label__hamburger"><i class="fas fa-bars icon"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul class="nav__links">
+          <li><a href="../pages/men.html">men</a></li>
+          <li><a href="../pages/women.html">women</a></li>
+          <li><a href="../pages/about.html">about</a></li>
+          <li><a href="../pages/contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__icons">
+        <label for="hamburger-menu" class="label__hamburger">
+          <i class="fas fa-search icon"></i>
+        </label>
         <input type="checkbox" id="hamburger-menu" />
-        <nav>
-          <ul class="nav__links">
-            <li><a href="../pages/men.html">men</a></li>
-            <li><a href="../pages/women.html">women</a></li>
-            <li><a href="../pages/about.html">about</a></li>
-            <li><a href="../pages/contact.html">contact</a></li>
-          </ul>
-        </nav>
 
-        <div class="header__icons">
-          <label for="hamburger-menu" class="label__hamburger">
-            <i class="fas fa-search icon"></i>
-          </label>
-          <input type="checkbox" id="hamburger-menu" />
-
-          <form action="" class="large__form__searchbar">
-            <input
-              type="search"
-              placeholder="search ..."
-              class="large__searchbar__input"
-            />
-            <i class="fas fa-search icon"></i>
-          </form>
-
-          <a href="cart.html"
-            ><i class="fas fa-shopping-cart icon"></i
-          ></a>
-        </div>
-      </header>
-    </div>
-    <main class="cart-main">
-      <h1>Cart</h1>
-      <section class="tabel">
-        <h2>Product:</h2>
-        <h2>size</h2>
-        <h2>price</h2>
-        <div class="product">
-          <img
-            class="cart-table-img"
-            src="../images/alex-geerts-mDXm0xQOb6g-unsplash.jpg"
-            alt="image of the rain catcher"
-          />
-          <p>the rain catcher</p>
-        </div>
-        <p>medium</p>
-        <p>$100</p>
-        <div class="empty-table"></div>
-        <div class="empty-table"></div>
-        <div class="empty-table"></div>
-        <p class="span2">Total:</p>
-        <p>$100</p>
-      </section>
-      <section>
-        <form method="POST" class="cart-form">
-          <h1 class="span2">personal information</h1>
-          <div>
-            <label for="Fname firstNameError">First name</label>
-            <p class="errorText firstNameError">please fill in a first name</p>
-            <input type="text" name="Fname" class="inputFirstName" />
-          </div>
-          <div>
-            <label for="Lname">Last name</label>
-            <p class="errorText lastNameError">please fill in a last name</p>
-            <input type="text" name="Lname" class="inputLastName" />
-          </div>
-          <div>
-            <label for="phone">phone</label>
-            <p class="errorText phoneError">please fill in a valide phone number</p>
-            <input type="tel" name="phone" class="inputPhoneNum"/>
-          </div>
-          <div>
-            <label for="email">email</label>
-            <p class="errorText emailError">please fill in a valide email</p>
-            <input type="email" name="email" class="inputEmail"/>
-          </div>
-          <div>
-            <label for="address">address</label>
-            <p class="errorText addressError">please fill in a valide address</p>
-            <input type="text" name="address" class="inputAddress"/>
-          </div>
-          <div>
-            <label for="postcode">post code</label>
-            <p class="errorText postcodeError">please fill in a valide post code</p>
-            <input type="text" name="postcode" class="inputPost"/>
-          </div>
-          <div class="span2">
-            <label for="city">city</label>
-            <p class="errorText cityError">please fill in a city</p>
-            <input type="text" name="city" class="inputCity" />
-          </div>
-          <input type="submit" value="Buy now" class="cta span2" />
+        <form action="" class="large__form__searchbar">
+          <input type="search" placeholder="search ..." class="large__searchbar__input" />
+          <i class="fas fa-search icon"></i>
         </form>
-      </section>
-    </main>
-    <footer>
-      <p class="footer__copyright">copyright &copy;</p>
-      <div class="footer__socialmedia">
-        <i class="fab fa-facebook-square icon"></i>
-        <i class="fas fa-envelope icon"></i>
+
+        <a href="cart.html"><i class="fas fa-shopping-cart icon"></i></a>
       </div>
-    </footer>
-    <script src="../js/components/validation.js"></script>
-    <script src="../js/cart.js"></script>
-  </body>
+    </header>
+  </div>
+  <div class="hiddenInfo">
+    <div class="span2">your item has been ordered.</div>
+    <div>
+      <a class="cta_overlay returnCart hiddenInfoLinks">return to cart</a>
+      <a href="../index.html" class="cta_overlay hiddenInfoLinks">return to home page</a>
+    </div>
+    
+
+
+  </div>
+  <main class="cart-main">
+    <h1>Cart</h1>
+    <section class="tabel">
+      <h2>Product:</h2>
+      <h2>size</h2>
+      <h2>price</h2>
+      <div class="product">
+        <img class="cart-table-img" src="../images/alex-geerts-mDXm0xQOb6g-unsplash.jpg"
+          alt="image of the rain catcher" />
+        <p>the rain catcher</p>
+      </div>
+      <p>medium</p>
+      <p>$100</p>
+      <div class="empty-table"></div>
+      <div class="empty-table"></div>
+      <div class="empty-table"></div>
+      <p class="span2">Total:</p>
+      <p>$100</p>
+    </section>
+    <section>
+      <form method="POST" class="cart-form">
+        <h1 class="span2">personal information</h1>
+        <div>
+          <label for="Fname firstNameError">First name</label>
+          <p class="errorText firstNameError">please fill in a first name</p>
+          <input type="text" name="Fname" class="inputFirstName" />
+        </div>
+        <div>
+          <label for="Lname">Last name</label>
+          <p class="errorText lastNameError">please fill in a last name</p>
+          <input type="text" name="Lname" class="inputLastName" />
+        </div>
+        <div>
+          <label for="email">email</label>
+          <p class="errorText emailError">please fill in a valide email</p>
+          <input type="email" name="email" class="inputEmail" />
+        </div>
+        <div>
+          <label for="address">address</label>
+          <p class="errorText addressError">please fill in a valide address</p>
+          <input type="text" name="address" class="inputAddress" />
+        </div>
+        <div>
+          <label for="postcode">post code</label>
+          <p class="errorText postcodeError">please fill in a valide post code</p>
+          <input type="text" name="postcode" class="inputPost" />
+        </div>
+        <div>
+          <label for="city">city</label>
+          <p class="errorText cityError">please fill in a city</p>
+          <input type="text" name="city" class="inputCity" />
+        </div>
+        <input type="submit" value="Buy now" class="cta span2" />
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p class="footer__copyright">copyright &copy;</p>
+    <div class="footer__socialmedia">
+      <i class="fab fa-facebook-square icon"></i>
+      <i class="fas fa-envelope icon"></i>
+    </div>
+  </footer>
+  <script src="../js/components/validation.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/cart.js"></script>
+
+</body>
+
 </html>

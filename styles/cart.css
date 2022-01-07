@@ -35,9 +35,7 @@
   margin-left: 10px;
 }
 
-.span2 {
-  grid-column: 1 / span 2;
-}
+
 
 .cart-form {
   display: flex;
@@ -69,4 +67,12 @@ input {
 .errorText {
   color: red;
   display: none;
+  font-size: 17px;
+}
+
+.hiddenInfoLinks{
+  display: flex;
+}
+.hiddenInfo {
+  
 }
