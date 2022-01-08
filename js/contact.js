@@ -1,87 +1,38 @@
-const contactForm = document.querySelector("#contactForm");
+const form = document.querySelector("#contactForm");
 const inputFirstName = document.querySelector("#inputFirstName");
-const firstName_errortext = document.querySelector("#firstName_errortext");
 const inputLastName = document.querySelector("#inputLastName");
-const lastName_errortext = document.querySelector("#lastName_errortext");
 const inputEmail = document.querySelector("#inputEmail");
-const email_errortext = document.querySelector("#email_errortext");
 const inputmessage = document.querySelector("#inputmessage");
-const message_errortext = document.querySelector("#message_errortext");
-
-// form validation on blur
+const firstNameError = document.querySelector("#firstName_errortext");
+const lastNameError = document.querySelector("#lastName_errortext");
+const emailError = document.querySelector("#email_errortext");
+const messageError = document.querySelector("#message_errortext");
+const hiddenInfo = document.querySelector(".hiddenInfo")
+// // form validation on blur
 inputFirstName.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        firstName_errortext.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        firstName_errortext.style.display = "none";
-    }
+    formSubmitLength(inputFirstName, firstNameError, 1);
 })
-
 inputLastName.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 1)) {
-        e.target.classList.add("inputError");
-        lastName_errortext.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        lastName_errortext.style.display = "none";
-    }
+    formSubmitLength(inputLastName, lastNameError, 1);
 })
-
-
-
 inputEmail.addEventListener("blur", (e) => {
-    if (!validateEmail(e.target.value)) {
-        e.target.classList.add("inputError");
-        email_errortext.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        email_errortext.style.display = "none";
-    }
+    formSubmitEmail(inputEmail, emailError);
 })
 inputmessage.addEventListener("blur", (e) => {
-    if (!checkLength(e.target.value, 20)) {
-        e.target.classList.add("inputError");
-        message_errortext.style.display = "block";
-    } else {
-        e.target.classList.remove("inputError");
-        message_errortext.style.display = "none";
-    }
+    formSubmitLength(inputmessage, messageError, 20);
 })
 
+
 // form validation on submit
+let test = false;
 function validateForm() {
     event.preventDefault()
-    if (checkLength(inputFirstName.value, 1)) {
-        firstName_errortext.style.display = "none";
-        inputFirstName.classList.remove("inputError");
-    } else {
-        firstName_errortext.style.display = "block";
-        inputFirstName.classList.add("inputError");
-    }
-
-    if (checkLength(inputLastName.value, 1)) {
-        lastName_errortext.style.display = "none";
-        inputLastName.classList.remove("inputError");
-    } else {
-        lastName_errortext.style.display = "block";
-        inputLastName.classList.add("inputError");
-    }
-    if (checkLength(inputEmail.value, 1)) {
-        email_errortext.style.display = "none";
-        inputEmail.classList.remove("inputError");
-    } else {
-        email_errortext.style.display = "block";
-        inputEmail.classList.add("inputError");
-    }
-
-    if (checkLength(inputmessage.value, 1)) {
-        message_errortext.style.display = "none";
-        inputmessage.classList.remove("inputError");
-    } else {
-        message_errortext.style.display = "block";
-        inputmessage.classList.add("inputError");
+    formSubmitLength(inputFirstName, firstNameError, 1, test);
+    formSubmitLength(inputLastName, lastNameError, 1, test);
+    formSubmitEmail(inputEmail, emailError);
+    formSubmitLength(inputmessage, messageError, 20, test);
+    if (test) {
+        hiddenInfo.style.display = "flex";
     }
 }
-contactForm.addEventListener("submit", validateForm);
+form.addEventListener("submit", validateForm);

@@ -1,19 +1,16 @@
 const form = document.querySelector(".cart-form")
-
 const inputFirstName = document.querySelector(".inputFirstName");
 const inputLastName = document.querySelector(".inputLastName");
 const inputEmail = document.querySelector(".inputEmail");
 const inputAddress = document.querySelector(".inputAddress");
 const inputPost = document.querySelector(".inputPost");
 const inputCity = document.querySelector(".inputCity");
-
 const firstNameError = document.querySelector(".firstNameError");
 const lastNameError = document.querySelector(".lastNameError");
 const emailError = document.querySelector(".emailError");
 const addressError = document.querySelector(".addressError");
 const postcodeError = document.querySelector(".postcodeError");
 const cityError = document.querySelector(".cityError");
-
 const returnCart = document.querySelector(".returnCart")
 const hiddenInfo = document.querySelector(".hiddenInfo")
 
@@ -53,33 +50,6 @@ form.addEventListener("submit", (e) => {
     }
     
 })
-
-function formSubmitLength(input, errortext, len) {
-    // validate length
-    if (!checkLength(input.value, len)) {
-        input.classList.add("inputError");
-        errortext.style.display = "block";
-        test = false;
-        
-    } else {
-        input.classList.remove("inputError");
-        errortext.style.display = "none";
-        test = true;
-    }
-    return test;
-}
-
-
-function formSubmitEmail(email, errortext) {
-    // validate email
-    if (!validateEmail(email.value)) {
-        email.classList.add("inputError");
-        errortext.style.display = "block";
-    } else {
-        email.classList.remove("inputError");
-        errortext.style.display = "none";
-    }
-}
 
 returnCart.addEventListener("click", (e) => {
     hiddenInfo.style.display = "none";

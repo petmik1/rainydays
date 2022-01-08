@@ -10,9 +10,7 @@ header{
 }
 
 @media (min-width: 600px) {
-  .hiddenInfo {
-    flex-direction: row;
-}.product-list {
+  .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
 

@@ -63,16 +63,10 @@ input {
   margin: 20px auto;
 }
 
-/* form validation style*/
+/*error*/
 .errorText {
   color: red;
   display: none;
   font-size: 17px;
 }
 
-.hiddenInfoLinks{
-  display: flex;
-}
-.hiddenInfo {
-  
-}
