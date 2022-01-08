@@ -19,12 +19,13 @@ inputEmail.addEventListener("blur", (e) => {
     formSubmitEmail(inputEmail, emailError);
 })
 inputmessage.addEventListener("blur", (e) => {
-    formSubmitLength(inputmessage, messageError, 20);
+    formSubmitLength(inputmessage, messageError, 10);
 })
 
 
 // form validation on submit
 let test = false;
+
 function validateForm() {
     event.preventDefault()
     formSubmitLength(inputFirstName, firstNameError, 1, test);
