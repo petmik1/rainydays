@@ -51,6 +51,8 @@ main {
 .cta {
   font-size: 20px;
   padding: 0 10px;
+  text-align: center;
+  
 }
 
 .hiddenInfo *{
