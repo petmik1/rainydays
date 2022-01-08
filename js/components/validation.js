@@ -11,13 +11,14 @@ function validateEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
+
 function formSubmitLength(input, errortext, len) {
     // validate length
     if (!checkLength(input.value, len)) {
         input.classList.add("inputError");
         errortext.style.display = "block";
         test = false;
-        
+
     } else {
         input.classList.remove("inputError");
         errortext.style.display = "none";
