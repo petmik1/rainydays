@@ -3,9 +3,10 @@ const listContainer = document.querySelector(".listContainer");
 
 async function getProducts() {
     try{
+        
         const response = await fetch(url);
         const result = await response.json();
-        createHTML(result, "men");
+        createHTML(result, "women");
     }
     catch(error){
         console.log(error);
@@ -13,3 +14,4 @@ async function getProducts() {
     }
 }
 getProducts();
+
