@@ -1,5 +1,7 @@
-function createHTML (product) {
+function createHTML (product, gender){
+
     product.forEach(function (product){
+        if(product.categories[0].slug === gender){
         listContainer.innerHTML += `
             <div class="product">
                 <a href="product.html">
@@ -8,5 +10,6 @@ function createHTML (product) {
                     <p>${product.prices.price} ${product.prices.currency_symbol}</p>
                 </a>
             </div>`
+        }
     })
 }

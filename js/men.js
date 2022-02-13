@@ -1,6 +1,6 @@
 const url = "http://rainydaysapi.petter-mikalsen.no/wp-json/wc/store/products";
 const listContainer = document.querySelector(".listContainer");
-
+const gender = "men";
 async function getProducts() {
     try{
         const response = await fetch(url);
