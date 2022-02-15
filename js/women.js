@@ -17,9 +17,10 @@ async function getProducts() {
 }
 getProducts();
 
+const myURl = new URL("http://127.0.0.1:5501/pages/women.html")
 
-let queryStr = "id=1"
-let searchParams = new URLSearchParams(queryStr);
-function addSearchParms(id){
-    searchParams.set("id", id)
+function setParams(id){
+ myURl.setParams= `id, ${id}`;
+console.log(myURl);
 }
+setParams();
