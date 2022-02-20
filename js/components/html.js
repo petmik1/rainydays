@@ -1,6 +1,5 @@
 function createHTML(product, gender) {
   product.forEach(function (product) {
-    console.log(product.name);
     if (product.categories[0].slug === gender) {
       listContainer.innerHTML += `
             <div class="product">
