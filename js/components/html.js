@@ -16,7 +16,7 @@ function createHTML(product, gender) {
 function createProductHTML(result) {
   productMain.innerHTML += `
     <div class="all-images">
-      <img src="${result.images[0].thumbnail}" class="img-large" alt="image of The rain cather" />
+       
     </div>
     <div class="product-info">
       <h1>${result.name}</h1>
