@@ -1,7 +1,7 @@
 
 # Rainydays
 
-![image](rainydays indexpage.png)
+![image](iamgesReadme/rainydaysIndexpage.png)
 
 A simple overview of the use/purpose of the project.
 
