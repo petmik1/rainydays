@@ -51,4 +51,4 @@ Here you can detail any information you want to provide regarding contributing t
 
 [My Twitter page](https://twitter.com/EmilHatland)
 
-[My Email](petter.mikalsen.pehm@mail.com)
+[My Email](mailto:petter.mikalsen.pehm@mail.com)
