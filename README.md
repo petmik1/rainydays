@@ -1,4 +1,5 @@
 
+
 # Rainydays
 
 ![image](iamgesReadme/rainydaysIndexpage.png)
@@ -61,4 +62,3 @@ This is where you can leave your social links for people to contact you, such as
 [My Twitter page](www.twitter.com)
 
 [My LinkedIn page](www.linkedin.com)
-
