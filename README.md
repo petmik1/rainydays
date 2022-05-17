@@ -12,7 +12,9 @@ A simple overview of the use/purpose of the project.
 ## Built With
 
 -HTML
+
 -CSS
+
 -JavaScript
 
 ## Getting Started
