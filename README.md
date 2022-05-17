@@ -4,10 +4,8 @@
 
 ![image](iamgesReadme/rainydaysIndexpage.png)
 
-A simple overview of the use/purpose of the project.
-
 ## Description
-
+the project is a school project which meant to be learned from and graded. it started of with a focus on design, Then a course in HTML and CSS. finaly we stareted on JavaScript. the project were a great learning experience.
 
 ## Built With
 
