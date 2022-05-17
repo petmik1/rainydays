@@ -8,20 +8,12 @@ A simple overview of the use/purpose of the project.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+-HTML
+-CSS
+-JavaScript
 
 ## Getting Started
 
@@ -57,8 +49,6 @@ Here you can detail any information you want to provide regarding contributing t
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+[My Twitter page](https://twitter.com/EmilHatland)
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+[My Email](petter.mikalsen.pehm@mail.com)
